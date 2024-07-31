@@ -6,9 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>User Input Project</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      #error_popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: red;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            display: none; /* Hidden by default */
+            z-index: 1000; /* Ensure it appears above other content */
+        }
+
+
+
+    </style>
+
+
+
+
+
   </head>
 
   <body>
+    <div id="error_popup"></div>
+    
     <div class="main_container">
       <h1 id="main_title"></h1>
       <p id="story_result"></p>
